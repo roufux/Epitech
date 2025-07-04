@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 int my_isneg (int n) ;
 
@@ -11,12 +12,6 @@ my_isneg(0);
 
 int my_isneg (int n)
 {
-	if (n<0)
-	{
-	printf("N");
-	}
-	else
-	{
-	printf("P");
-	}
+	printf((n<0) ? "N" : "P");
+	write(1, (n<0) ? "N" : "P", 1);
 }

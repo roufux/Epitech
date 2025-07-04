@@ -1,12 +1,12 @@
 #include <stdio.h>
-int my_print_revalpha(void);
+void my_print_revalpha(void);
 
 
 int main()
 {
     my_print_revalpha();
 }
-
+/*
 int my_print_revalpha(void)
 {
     int i;
@@ -18,4 +18,11 @@ int my_print_revalpha(void)
     }
     while(i>=97);
     return 0;
+}
+*/
+void my_print_revalpha(void)
+{
+	char c='z';
+	while(c>='a')
+		printf("%c",--c);
 }

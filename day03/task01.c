@@ -1,21 +1,28 @@
 #include <stdio.h>
-int my_print_alpha(void);
+void my_print_alpha();
 
 
-int main()
+void main()
 {
     my_print_alpha();
 }
 
-int my_print_alpha(void)
+void my_print_alpha()
 {
     int i;
     i=97;
+    char a='a';
+    a++;
+    printf("%c\n",a);
+    printf("%d\n",a);
+    printf("boucle:\n");
     do
     {
         printf("%c",i);
         i++;
     }
     while(i<=122);
-    return 0;
 }
+
+
+/* CHar stocke en ascii*/
